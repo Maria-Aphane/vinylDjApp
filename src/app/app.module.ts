@@ -1,3 +1,6 @@
+import { UserprofilePage } from './../pages/userprofile/userprofile';
+import { SignupPage } from './../pages/signup/signup';
+import { SiginPage } from './../pages/sigin/sigin';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -10,21 +13,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthProvider } from '../providers/auth/auth';
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    UserprofilePage,
+    SignupPage,
+    SiginPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    UserprofilePage,
+    SignupPage,
+    SiginPage
   ],
   providers: [
     StatusBar,
